@@ -1,0 +1,5 @@
+#!/bin/sh
+#ping slash16.org -c 1 | grep 'PING' | cut -d ' ' -f 3 | tr -d '(' | tr -d ')' | tr -d ':'
+#host slash16.org
+nslookup slash16.org
+

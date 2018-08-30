@@ -1,0 +1,2 @@
+#traceroute slash16.org | grep '^ 3'
+The device that is noted with NAT makes the link between the local network and the outside world. NAT stands for Network Address Translation and translates private IP networks into legal globally unique adresses.

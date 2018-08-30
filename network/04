@@ -1,0 +1,3 @@
+#!/bin/sh
+netstat -nr | grep '^default *[a-z0-9\.\:%]*' | tr -s ' ' | cut -d " " -f 2
+
