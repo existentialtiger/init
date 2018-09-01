@@ -1,0 +1,5 @@
+#!/bin/sh
+pkill tail
+#can also use pkill -9 tail: -9 is signal SIGKILL, cant be blocked, handled, ignored
+#or ps to get pid and kill pid
+#or kill %1

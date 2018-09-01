@@ -1,0 +1,4 @@
+#!/bin/sh
+top
+#htop
+# ps -aux | less

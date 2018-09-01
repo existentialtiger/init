@@ -1,0 +1,4 @@
+cron    - general name of service for running scheduled actions
+crond   - daemon that runs in bg and reads crontab
+crontab - file containing jobs in the format:
+		minute hour day-of-month month day-of-week command
