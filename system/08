@@ -1,1 +1,2 @@
-~/.ssh/id_rsa
+ssh-keygen -t rsa -b 4096 -C "email"
+~/.ssh/id_rsa.pub

@@ -1,0 +1,3 @@
+#!/bin/sh
+du -h /var/
+#du -a -h /var/ a flag includes all files, not just directories
