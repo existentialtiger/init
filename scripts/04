@@ -1,0 +1,12 @@
+#!/bin/sh
+md5sum /etc/crontab > /var/log/current_cron_comp.log
+A=md5sum /var/log/current_cron_comp.log
+B=md5sum /var/log/current_cron.log
+#DIFF=$(diff /var/log/current_cron.log /var/log/current_cron_comp.log)
+if [$A != $B];
+then
+	echo "isent"
+	echo "The Crontab has been modified\n." | sendmail root
+fi
+echo /var/log/current_cron_comp.log > /var/log/current_cron.log
+
