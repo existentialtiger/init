@@ -1,5 +1,6 @@
 #!/bin/sh
-echo "apt-get upgrade && update -y" > /etc/cron.weekly/init
+echo "apt-get upgrade -y >> /var/log/update_script.log" > /etc/cron.weekly/init
+echo "apt-get update >> /var/log/update_script.log" >> /etc/cron.weekly/init
 chmod 755 /etc/cron.weekly/init
 echo "0 4 * * 0 /etc/cron.weekly/init" > addcron
 crontab addcron
